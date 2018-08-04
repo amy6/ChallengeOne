@@ -21,8 +21,6 @@ public class HomeFragment extends Fragment {
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;
 
-    String names[] = new String[20];
-
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -42,6 +40,7 @@ public class HomeFragment extends Fragment {
         mRecyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
 
         // TODO: Call the load data method and populate the RV
+        loadData();
 
         return view;
     }
@@ -49,10 +48,11 @@ public class HomeFragment extends Fragment {
     private void loadData(){
         ArrayList<NameModel> mArrayList = new ArrayList<>();
         for(int i=0; i< CustomData.name.length; i++){
-            mArrayList.add(new NameModel(CustomData.name[i]));
+            mArrayList.add(new NameModel(CustomData.name[i],CustomData.urls[i]));
         }
         NamesAdapter adapter = new NamesAdapter(mArrayList);
         // TODO: Set the adapter to the recycler view
+        mRecyclerView.setAdapter(adapter);
     }
 
 }

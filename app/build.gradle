@@ -29,9 +29,11 @@ dependencies {
 
     // Required Libraries
     // TODO 1 - Add Butterknife Library following the link https://github.com/JakeWharton/butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     // TODO: Add the Card View and Recycler View Dependencies
     implementation "com.android.support:recyclerview-v7:27.1.1"
-    implementation "com.android.support:design:27.1.1"
     implementation 'com.android.support:cardview-v7:27.1.1'
-
+    implementation "com.android.support:design:27.1.1"
 }
