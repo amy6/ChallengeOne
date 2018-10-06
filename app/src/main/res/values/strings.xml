@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Billion Dollar</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Billion\nDollar</string>
     <string name="img_desc">This will be the icon taken from internet</string>
+    <string name="app_logo">App Logo</string>
 </resources>
